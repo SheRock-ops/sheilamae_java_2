@@ -59,7 +59,7 @@ public class Lunch {
     }
   }
   public void calculateDiscount(int discountPercentage, int amount) {
-    if (amount > MAX_DELIVERY_AMOUNT) {
+    if (amount >= MAX_DELIVERY_AMOUNT) {
     this.price = this.price * (1 - discountPercentage / 100.0); // Apply the discount to the price
     }
   }
