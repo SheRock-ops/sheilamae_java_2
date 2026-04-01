@@ -3,7 +3,7 @@ import java.security.SecureRandom;
 public class Lunch {
   
   private String customerName;
-  private String mainItem;
+  private String mainItem; // Options: pork, chicken, beef, fish, vegetarian, seafood
   private int quantity;
   private double price;
   private final int MAX_DELIVERY_AMOUNT = 10; // Maximum delivery amount for the lunch order
@@ -16,6 +16,10 @@ public class Lunch {
     this.quantity = randNum.nextInt(10) + 1; // Random quantity between 1 and 10
     this.price = randNum.nextDouble( 10) * price; // Random price between 0 and the specified price
     this.isDelivered = false; // Default to not delivered
+    // Add random dessert
+            String[] desserts = {"Chocolate Cake", "Ice Cream", "Fruit Salad", "Cheesecake", "Brownie"};
+            String freeDessert = desserts[randNum.nextInt(desserts.length)];
+            System.out.println(" Free dessert added: " + freeDessert);
   }
    // getters 
   public String getCustomerName() {

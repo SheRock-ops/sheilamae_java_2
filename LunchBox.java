@@ -13,6 +13,9 @@ public class LunchBox {
     
     System.out.print("Enter quantity: ");
     int quantity = skyler.nextInt();
+
+    System.out.print("Enter dessert: ");
+    skyler.nextLine();
     
     System.out.print("Enter price: ");
     double price = skyler.nextDouble();
